@@ -24,7 +24,7 @@ body {
     font-family: 'Inter', sans-serif;
     width: 100%;
     max-width: 600px;
-    height: 80vh;
+    height: 70vh;
     box-shadow: 0 0 15px 15px #eee;
     border-radius: 10px;
     overflow: hidden;
@@ -93,6 +93,7 @@ body {
     font-size: 12px;
     cursor: pointer;
     opacity: 0.8;
+    color: #2B283A;
 }
 
 .color-name {
@@ -101,4 +102,15 @@ body {
     color: white;
     text-shadow: 0 0 12px #646464;
     padding: 0 10px;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 480px) {
+    .color-name {
+        font-size: 16px;
+    }
+
+    .color-hex {
+        font-size: 14px;
+    }
 }
