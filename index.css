@@ -1,0 +1,104 @@
+a, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input, button {
+    margin: 0;
+    padding: 0;
+  }
+  
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 100vh;
+}
+
+.container {
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    max-width: 600px;
+    height: 80vh;
+    box-shadow: 0 0 15px 15px #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    align-self: center;
+}
+
+.header {
+    background-color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.form {
+    flex-grow: 2;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.input-scheme, .get-color-btn {
+    padding: 10px;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 3px;
+    background-color: white;
+}
+
+.input-scheme {
+    flex-grow: 2;
+}
+
+.input-color {
+    height: 39px;
+    width: 50px;
+    padding: 2px;
+}
+
+.get-color-btn {
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    height: calc(100% - 70px);
+}
+
+.color-slot {
+    width: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s;
+    box-shadow: inset 0px 10px 12px -12px #323232;
+}
+
+.color-slot:hover {
+    box-shadow: inset 0 0 8px #323232;
+}
+
+.color-hex {
+    background-color: white;
+    margin-top: auto;
+    line-height: 50px;
+    font-weight: 500;
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.color-name {
+    margin: auto 0;
+    align-self: center;
+    color: white;
+    text-shadow: 0 0 12px #646464;
+    padding: 0 10px;
+}
