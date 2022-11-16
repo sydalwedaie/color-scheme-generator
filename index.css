@@ -14,21 +14,33 @@ html {
 }
 
 body {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   height: 100vh;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(#ffb6b6, #e5b5ff);
+}
+
+.title {
+    letter-spacing: 3px;
+    text-align: center;
+    position: fixed;
+    top: 20px;
+    font-size: 24px;
+    color: #84657a;
 }
 
 .container {
-    font-family: 'Inter', sans-serif;
     width: 100%;
     max-width: 600px;
     height: 70vh;
-    box-shadow: 0 0 15px 15px #eee;
+    box-shadow: 0 0 6px 1px #474747;
     border-radius: 10px;
     overflow: hidden;
     align-self: center;
+    z-index: 10000;
 }
 
 .header {
@@ -106,6 +118,10 @@ body {
 }
 
 @media screen and (min-width: 480px) {
+    .title {
+        font-size: 28px;
+        padding-top: 20px;
+    }
     .color-name {
         font-size: 16px;
     }
